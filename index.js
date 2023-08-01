@@ -71,13 +71,16 @@
     function printResults(results) {
       console.log(results);
       let tags = document.getElementsByClassName("result");
-
-      // Sort the results array and the option names array in descending order based on the points
-      const sortedResults = results.slice().sort((a, b) => b - a);
-      const sortedOptionNames = optionNames.slice().sort((a, b) => results.indexOf(b) - results.indexOf(a));
-
+    
+      // Create an array of objects with option names and corresponding points
+      const optionData = optionNames.map((name, index) => ({ name, points: results[index] }));
+    
+      // Sort the optionData array in descending order based on points
+      optionData.sort((a, b) => b.points - a.points);
+    
+      // Update the result tags with the sorted option names and points
       for (let i = 0; i < tags.length; i++) {
-        tags[i].textContent = `${sortedOptionNames[i]}: ${sortedResults[i]} points`;
+        tags[i].textContent = `${optionData[i].name}: ${optionData[i].points} points`;
       }
     }
   

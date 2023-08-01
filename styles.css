@@ -1,0 +1,117 @@
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 252, 246);
+}
+
+#styles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div img {
+  height: 300px;
+  padding: 10px;
+}
+
+div p, div pre {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.user {
+  background-color: rgb(248, 209, 124);
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user select {
+  font-size: 20px;
+  margin: 5px;
+}
+
+#people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#submit {
+  font-size: 20px;
+  margin: 0 auto;
+  width: 200px;
+  border: 3px solid green;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#results {
+  background-color: rgb(252, 195, 130);
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+#styles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#parent div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  flex: 50%;
+}
+
+#style1 {
+  background-color: rgb(162,1,44);
+  color: rgb(255, 255, 255);
+}
+
+#style2 {
+  background-color: rgb(141,172,230);
+  color: rgb(0, 0, 0);
+}
+
+#style3 {
+  background-color: rgb(242,239,233);
+  color: rgb(0, 0, 0);
+}
+
+#style4 {
+  background-color: rgb(164,10,42);
+  color: rgb(255, 249, 246);
+}
+
+#style5 {
+  background-color: rgb(180,180,182);
+  color: rgb(0, 0, 0);
+}
+
+#style6 {
+  background-color: rgb(48,57,54);
+  color: rgb(255, 249, 246);
+}
+
